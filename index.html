@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu Página de Helados</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/DANNA.png" alt="Logo de la Página">
+        </div>
+
+        <div class="search-bar">
+            <input type="text" placeholder="Buscar...">
+            <button><img src="img/Busqueda.png" alt="Buscar"></button>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="#">Helados</a>
+                    <ul class="submenu">
+                        <li><a href="#">Todos los Sabores</a></li>
+                        <li><a href="#">Sin Gluten</a></li>
+                        <li><a href="#">Sabores Tropicales</a></li>
+                    </ul>
+                <li><a href="registro/registro.html">Registro</a></li>
+                <li><a href="carro/carro.html">Carrito</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+    
+    <section id="productos">
+        <div class="producto">
+            <img src="img/chocolate medio L.jpg" alt="Helado 1">
+            <h3>Helado de Chocolate</h3>
+            <p>Delicioso helado sabor a chocolate.</p>
+            <button class="comprar-button">Comprar</button>
+            <button class="agregar-al-carro-button">Agregar Carrito</button>
+        </div>
+
+        <div class="producto">
+            <img src="img/leche merengada.jpg" alt="Helado 1">
+            <h3>Helado de Leche Merengada</h3>
+            <p>Delicioso helado sabor a leche merengada.</p>
+            <button class="comprar-button">Comprar</button>
+            <button class="agregar-al-carro-button">Agregar Carrito</button>
+        </div>
+
+        <div class="producto">
+            <img src="img/tres sabores.jpg" alt="Helado 1">
+            <h3>Helado de Tres Sabores</h3>
+            <p>Delicioso helado de tres sabores.</p>
+            <button class="comprar-button">Comprar</button>
+            <button class="agregar-al-carro-button">Agregar Carrito</button>
+        </div>
+
+        <div class="producto">
+            <img src="img/fresa sin gluten.jpg" alt="Helado 1">
+            <h3>Helado de Fresa Sin Gluten </h3>
+            <p>Delicioso helado sabor a fresa sin gluten.</p>
+            <button class="comprar-button">Comprar</button>
+            <button class="agregar-al-carro-button">Agregar Carrito</button>
+        </div>
+
+
+        <!-- Repite este bloque para cada producto -->
+    </section>
+
+    <section id="curiosidades">
+        <div class="curiosidad">
+            <h3>Curiosidad #1: Origen del Helado</h3>
+            <p>El helado se originó en la antigua Persia, donde se solía mezclar nieve con frutas y miel para crear una deliciosa golosina.</p>
+        </div>
+        <div class="curiosidad">
+            <h3>Curiosidad #2: Helado en el Espacio</h3>
+            <p>En 1968, los astronautas del Apolo 7 disfrutaron de helado de vainilla durante su misión, convirtiéndose en los primeros en comer helado en el espacio.</p>
+        </div>
+        <div class="curiosidad">
+            <h3>Curiosidad #3: Sabores Inusuales</h3>
+            <p>Existen sabores de helado bastante inusuales en el mundo, como helado de aguacate, queso de cabra y hasta pescado.</p>
+        </div>
+        <!-- Agrega más curiosidades aquí -->
+    </section>
+
+    <section id="promociones" class="colored-section">
+        <h2>Promociones Especiales</h2>
+        <p>No te pierdas nuestras increíbles promociones en helados premium. ¡Solo por tiempo limitado!</p>
+    </section>
+
+    <section id="mensaje-llamativo">
+        <h2>¡Disfruta de nuestros deliciosos helados!</h2>
+        <p>¿Qué esperas para probar los mejores helados del mundo?</p>
+    </section>
+
+    <footer>
+        <div class="redes-sociales">
+            <a href="https://www.facebook.com/profile.php?id=61561745377702&mibextid=ZbWKwL"><img src="img/Facebook.png" alt="Facebook"></a>
+            <a href="https://www.instagram.com/dannahelados/"><img src="img/Instagram.png" alt="Instagram"></a>
+            <a href="#"><img src="img/Whatsapp.png" alt="WhatsApp"></a>
+        </div>
+    </footer>
+
+    <script>
+        // Script para redireccionar a la página de pago al hacer clic en el botón "Comprar"
+        const comprarButtons = document.querySelectorAll('.comprar-button');
+        comprarButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                window.location.href = 'pago.html'; // Cambia 'pagina_de_pago.html' por la URL de tu página de pago
+            });
+        });
+    </script>
+</body>
+</html>
